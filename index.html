@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso Javascript</title>
+</head>
+<body>
+    <script>
+
+        //Arrays arreglos 
+
+        //Los arreglos son estructuras de datos 
+
+        var miArreglo = [ "Alejandra" , 26]
+        console.log(miArreglo);
+
+        var estudiantes = ["Alejandra" , "Rocio" , "Maximiliano" , "Romina"];
+        console.log(estudiantes);
+
+        var notas = [68 , 96 , 48 , 65];
+        console.log(notas);
+
+        //Arreglos anidados
+
+        var listaDeEstudiantes = [["Alejandra", 27] , ["Rocio", 25]];
+
+        console.log(listaDeEstudiantes);
+
+        var listaDeProductos = [["Camisa", 6.58 , "m125"],];
+
+        console.log(listaDeProductos);
+
+        var Datos =[[2.3 , 5.6 , 8.2] , [4.4 , 8.5 , 9.6] , [8.6 , 6.4 , 2.8]];
+
+        console.log(Datos);
+
+        //Acceder a los elementos de un arreglo
+
+        var miArreglo = [25 , 47 , 30];
+
+        /* 
+        Arreglo : [25 . 47 , 30]
+        indices :    0  1  2 
+        */
+
+        console.log(miArreglo[0])
+        console.log(miArreglo[1])
+        console.log(miArreglo[2])
+
+        var Suma = miArreglo [0] + miArreglo [1] + miArreglo [2];
+
+        console.log (Suma);
+
+        //Modificar elementos de un arreglo 
+
+        var miArreglo = [10 , 20 , 30]; 
+        miArreglo [0] = 40;
+
+        console.log(miArreglo);
+
+        miArreglo[1] = [1 , 2 , 3];
+
+        console.log(miArreglo);
+
+        //Acceder a arreglos multidimencionales
+
+        var miArreglo = [1 , 2 , 3] ; [4 , 5 , 6] ; [7 , 8 , 9] ;
+
+        /*
+
+        arreglos: [[1 , 2 , 3], [4 , 5 , 6], [7 , 8 , 9]];
+        indices:       0             1           2
+   indices internos: 0   1   2    0   1   2    0   1  2
+
+
+        */
+
+        console.log(miArreglo[2] [0]) ;
+
+        //Push 
+        //Nos permite añadir un elemento al final del arreglo
+
+        var estaciones = ["Invierno" , "otoño", "primavera"];
+
+        estaciones.push("Verano");
+
+        console.log(estaciones);
+
+        //.pop
+
+        //Sirve para remover el ultimo elemento de un arreglo
+        // tambien permite asignar el elemento a una variable
+
+        var estaciones;
+
+        var estacion;
+
+        estaciones = ["Invierno" , "otoño" , "primavera" , "Verano"];
+
+        estacion = estaciones.pop("Verano");
+
+        console.log(estaciones);
+        console.log(estacion);
+
+        //.shift 
+
+        //Nos permite remover el primer elemento del arreglo
+
+        var estaciones = ["invierno" , "otoño" , "primavera" , "Verano"];
+
+        estaciones.shift();
+
+        console.log(estaciones);
+
+        // .Unshift 
+
+        //Nos permite agregar elementos al principio de un arreglo 
+
+        var estaciones = ["Invierno" , "Otoño" , "Primavera"];
+
+        estaciones.unshift("Verano");
+
+        console.log(estaciones);
+
+        //Cuatro metodos para manipular los arrays 
+
+        // push , pop , shift , unshift 
+
+
+        // Mini Proyecto listas de compras 
+
+        var miListaDeCompras = [["cereal" , 3] , ["leche " , 2] , ["galletas" , 4] , ["pan" , 5] , ["refresco" , 7] , ["pollo" , 7]];
+
+        //Cereal
+
+        console.log("Voy a comprar " + miListaDeCompras [0][1] + "unidades de " + miListaDeCompras [0] [0] + ".") 
+
+        //Leche
+
+        console.log("Voy a comprar " + miListaDeCompras [1][1] + "unidades de " + miListaDeCompras [1] [0] + ".")
+
+        //Galletas
+        console.log("Voy a comprar " + miListaDeCompras [2][1] + "unidades de " + miListaDeCompras [2] [0] + ".")
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    </script>
+</body>
+</html>
